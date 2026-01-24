@@ -31,7 +31,7 @@ const App = () => {
 
   // OpenWeatherMap API Key - REPLACE WITH YOUR OWN
   const API_KEY = "a8b20532d52d0e911a0bcccac8bf715b";
-  const API_URL = "https://api.openweathermap.org/data/2.5/weather";
+  const API_URL = "enter you api url here";
 
   /**
    * Fetch weather data from OpenWeatherMap API
