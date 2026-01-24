@@ -30,8 +30,8 @@ const App = () => {
   const [weatherHistory, setWeatherHistory] = useState([]);
 
   // OpenWeatherMap API Key - REPLACE WITH YOUR OWN
-  const API_KEY = "a8b20532d52d0e911a0bcccac8bf715b";
-  const API_URL = "enter you api url here";
+  const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY_HERE";
+  const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
   /**
    * Fetch weather data from OpenWeatherMap API
