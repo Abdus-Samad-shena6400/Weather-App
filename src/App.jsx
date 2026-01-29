@@ -269,7 +269,7 @@ const App = () => {
             }`}
           >
             <div className="flex gap-2 mb-4">
-              <div className="relative flex-1">
+              <div className="relative flex-1 min-w-0">
                 <Search
                   className="absolute left-4 top-3.5 text-gray-400"
                   size={20}
@@ -290,7 +290,7 @@ const App = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="px-6 py-2 bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 rounded-lg font-semibold transition-all transform hover:scale-105 active:scale-95 flex items-center gap-2"
+                className="px-4 sm:px-6 py-2 bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 rounded-lg font-semibold transition-all transform hover:scale-105 active:scale-95 flex items-center gap-2 text-sm sm:text-base flex-shrink-0 whitespace-nowrap"
               >
                 {loading ? (
                   <Loader className="animate-spin" size={20} />
@@ -304,11 +304,11 @@ const App = () => {
                 type="button"
                 onClick={fetchLocationWeather}
                 disabled={loading}
-                className={`px-6 py-2 rounded-lg font-semibold transition-all transform hover:scale-105 active:scale-95 ${
+                className={`px-3 sm:px-6 py-2 rounded-lg font-semibold transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base flex items-center gap-2 flex-shrink-0 whitespace-nowrap ${
                   darkMode
                     ? "bg-purple-600 hover:bg-purple-700"
                     : "bg-purple-500 hover:bg-purple-600"
-                } disabled:opacity-50 flex items-center gap-2`}
+                } disabled:opacity-50`}
                 aria-label="Get weather for current location"
               >
                 <MapPin size={20} />
